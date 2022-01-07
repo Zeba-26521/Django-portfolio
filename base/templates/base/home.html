@@ -1,0 +1,45 @@
+{% extends 'base/base.html' %}
+{% block sidebar %}{% include 'base/homeside.html' %} {% endblock sidebar %}
+
+
+{% block content %}
+{% load static %}
+
+<!-- blocl start -->
+
+<div class=" mt-5">
+    <div class="text-center text-white" >
+    <img src="{% static 'base/images/me.jpg' %}" alt="profile-Pic" class="img thumbnail" width="250px" height="150px">
+    </div>
+
+    <div class=" mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4">
+            <p class="text-indent:100px;">
+                I am <strong class="text-info">Zeb Tasneem</strong>, a develoer and programmaer(<strong class="text-info">Python</strong>). An inquisitive-natured, detail oriented person 
+                who enjoys exploring new things and is constantly evolving. I have experience in building web based applications, writing python scripts and API's.
+
+            </p>
+            <p class=" text-indent:100px mt-3">
+                I am experienced in python/django, SQL, HTML/CSS and Bootstrap.
+                Solid Understanding on database design (RDBMS) and network protocol. I have exposure to Python well-known libraries like NumPY and
+                Pandas. I am familier with IDE-PyCharm ,visual studio code, jupyter.
+            </p>
+
+
+        </div>
+
+    </div>
+
+    <div class="text-center mt-5" >  
+        <a href="/contact/"> <button class="btn btn-success st-font" >
+        <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
+        <br>Reach me.. </button></a>
+    </div>
+
+</div>
+
+<!-- blocl start -->
+
+
+{% endblock content %}
